@@ -1,0 +1,267 @@
+/* ----- MEDIA QUERIES ----- */
+
+
+
+
+
+/* ----- Mobile ----- */
+
+
+
+@media screen and (max-width: 650px)
+{
+
+
+    /* ----- history section ----- */
+
+    .history-section
+    {
+        height: 75vh;
+    }   
+
+    .history-section-container
+    {
+        height: 75vh;
+    }
+
+
+    /* ----- contact and location section ----- */
+    
+    .contact-n-location-section
+    {
+        height: 170vh;
+    }
+    
+    .location-section
+    {
+        margin-top: 50px;
+
+        height: 1000px;
+    }
+
+
+    /* ----- footer ----- */
+
+    .footer-cards-grid
+    {
+        grid-template-areas: 
+            "links contact" /* row 1 */
+            "schedules social-media"; /* row 2 */
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 651px)
+{
+    /* ----- history section ----- */
+
+    .history-section
+    {
+        height: 55vh;
+    }   
+
+    .history-section-container
+    {
+        height: 55vh;
+    }
+
+    .contact-n-location-section
+    {
+        height: 170vh;
+    }
+
+    .location-section
+    {
+        margin-top: 50px;
+
+        height: 1000px;
+    }
+
+    /* ----- footer ----- */
+
+    .footer-cards-grid
+    {
+        grid-template-areas: 
+            "links contact" /* row 1 */
+            "schedules social-media"; /* row 2 */
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+}
+
+/* ----- TABLET ----- */
+
+@media screen and (min-width: 768px)
+{
+    
+    
+    /* ----- history section ----- */
+
+    
+    .history-section
+    {
+        height: 50vh;
+    }   
+
+    .history-section-container
+    {
+        height: 50vh;
+    }
+
+    .culinary-gallery-images-grid-container
+    {
+        height: 800px;
+        min-height: 600px;
+
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-areas: 
+            "img1 img1 img2 img3"
+            "img1 img1 img2 img4"
+            "img5 img5 img2 img6"
+            "img7 img7 img8 img8"
+            "img7 img7 img9 img9"
+        ;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+
+    .restaurant-experience-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .environment-section
+    {
+        width: 45%;
+
+        margin: 0 auto;
+    }
+
+    .calendar-section
+    {
+        width: 45%;
+
+        margin: 0 auto;
+    }
+
+    .contact-n-location-section
+    {
+        height: 120vh;
+    }
+
+    .contact-n-location-section-container
+    {
+        flex-direction: row;
+
+        height: 80%;
+    }
+
+    .contact-section
+    {
+        width: 45%;
+        height: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: start;
+
+        margin: 0 auto;
+    }
+
+    .contact-section-container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .location-section
+    {
+        width: 45%;
+        height: 100%;
+
+        display: flex; 
+
+        justify-content: center;
+        align-items: start;
+
+        margin: 0 auto;
+    }
+
+    /* ----- footer ----- */
+
+    .footer-cards-grid
+    {
+        grid-template-areas: 
+            "links schedules contact social-media"; /* unique row */
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+
+    .footer-card-container:nth-child(2)
+    {
+        margin-right: 75px;
+    }
+
+    .footer-card-container:nth-child(3)
+    {
+        margin-left: 75px;
+    }
+}
+
+/* ----- DESKTOP ----- */
+
+@media screen and (min-width: 1024px)
+{
+    /* ----- history section ----- */
+    
+    .history-section
+    {
+        height: 35vh;
+    }   
+
+    .history-section-container
+    {
+        height: 35vh;
+    }
+
+    .culinary-gallery-images-grid-container
+    {
+        width: 80%;
+        height: 600px;
+        min-height: 400px;
+
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-areas: 
+            "img1 img2 img3 img4"
+            "img1 img2 img3 img4"
+            "img5 img5 img5 img5"
+            "img6 img6 img7 img7"
+            "img8 img8 img8 img9"
+        ;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+
+    /* ----- footer ----- */
+
+    .footer-cards-grid
+    {
+        grid-template-areas: 
+            "links schedules contact social-media"; /* unique row */
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+}

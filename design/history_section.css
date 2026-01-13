@@ -1,0 +1,234 @@
+/* ----- HISTORY SECTION ----- */
+
+
+
+
+
+.history-section
+{
+    /* border: 3px solid red; */
+    height: 40vh;
+
+    background-color: rgba(100,100,100,0.6);
+    
+    position: relative;
+    z-index: -3;
+}
+
+.history-section-container
+{
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    z-index: -3;
+
+    /* border: 3px solid blue; */
+}
+
+
+
+/* ----- Lateral Aside ----- */
+
+
+
+.lateral-aside
+{
+    background-image: url("D:/Programación/Projects/Web/Recommended Projects by DeepSeek/Website for Reestaurant/background_images/background_5.jpg");
+    background-size: contain;
+
+    width: 40%;
+    height: 100%;
+
+    margin: 0 5%;
+
+    position: relative;
+    z-index: -2;
+
+    /* border: 3px solid blueviolet; */
+}
+
+.lateral-aside-container
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;   
+
+    backdrop-filter: blur(2.5px);
+
+    position: relative;
+    z-index: -2;
+
+    /* border: 3px solid violet; */
+}
+
+
+/* ----- caption ----- */
+
+
+.lateral-aside-caption
+{
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+
+    z-index: -1;
+
+    /* border: 3px solid pink; */
+}
+
+
+
+/* ----- Main Block ----- */
+
+
+
+.main-block
+{
+    width: 45%;
+    height: 100%;
+
+    background-color: rgba(175,70,40,1);
+
+    margin-left: 0 2.5%;
+
+    position: relative;
+    z-index: -2;
+
+    /* border: 3px solid aqua */;
+}
+
+.main-block-container
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+    z-index: -2;
+
+    /* border: 3px solid gold; */
+}
+
+
+/* ----- caption ----- */
+
+
+.main-block-caption-container
+{
+    /* border: 3px solid green; */
+
+    margin-top: 20px;
+}
+
+.main-block-caption
+{
+    color: rgba(255,255,255,1);
+
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+
+    z-index: -1;
+
+    /* border: 3px solid greenyellow; */
+}
+
+
+/* ----- paragraph ----- */
+
+
+.main-block-paragraph-container
+{
+    /* border: 3px solid grey; */
+
+    margin: 0 20px;
+    margin-top: 20px;
+}
+
+.main-block-paragraph
+{
+    color: rgba(255,255,255,1);
+
+    font-family: monospace;
+    font-style: italic;
+
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+
+    z-index: -1;
+
+    /* border: 3px solid goldenrod; */
+}
+
+
+/* ----- icons -----*/
+
+
+.icons-n-dates-container
+{
+    /* border: 3px solid black; */
+
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-n-date-element
+{
+    margin-left: 5px;
+
+    box-shadow:  2px 2px 5px 2.5px rgba(0,0,0,0.6);
+
+    background-color: rgba(255,255,255,1);
+
+    padding: 2.5px;
+
+    z-index: -1;
+}
+
+.arrow-element
+{
+    margin-left: 5px;
+
+    z-index: -1;
+}

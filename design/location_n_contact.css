@@ -1,0 +1,354 @@
+/* ----- CONTACT AND LOCATION ----- */
+
+
+
+
+
+.contact-n-location-section
+{
+    /* border: 3px solid red; */
+
+    background: linear-gradient(
+        to bottom,
+        rgba(80,20,0,1),
+        rgba(175,70,40,1)
+    ); 
+    
+    height: 150vh;
+}
+
+
+
+/* ----- Caption ----- */
+
+
+
+.contact-n-location-caption-container
+{
+    /* border: 3px solid slateblue; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 0;
+}
+
+.contact-n-location-caption
+{
+    /* border: 3px solid sienna; */
+
+    height: 100%;
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+
+    position: relative;
+
+    z-index: 0;
+
+    margin-top: 100px;
+}
+
+.contact-n-location-section-container
+{
+    /* border: 3px solid rebeccapurple; */
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    max-height: 125vh;
+}
+
+
+
+/* ----- Contact Section ----- */
+
+
+
+.contact-section
+{
+    /* border: 3px solid rosybrown; */
+
+    max-height: 125vh;
+}
+
+.contact-section-container
+{
+    /* border: 3px solid royalblue; */
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+/* ----- caption ----- */
+
+
+.contact-section-caption-container
+{
+    /* border: 3px solid tan; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section-caption
+{
+    /* border: 3px solid teal; */
+
+    height: 100%;
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ----- Subtitle ----- */
+
+
+/* .contact-subtitle-container
+{
+    border: 3px solid red;
+} */
+
+/* ----- subcaption ----- */
+
+.contact-subcaption
+{
+    width: 100%;
+
+    margin-top: 50px;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: left;
+    text-transform: capitalize;
+    text-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
+
+/* ----- paragraph ----- */
+
+.contact-paragraph
+{
+    margin-top: 10px;
+    margin-left: 30px;
+
+    color: rgba(255,255,255,1);
+
+    font-family: monospace;
+    font-style: italic;
+
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+.contact-address-paragraph-2
+{
+    /* border: 3px solid black; */
+
+    word-wrap: break-word;
+}
+
+/* ----- button ----- */
+
+.contact-section-button-container
+{
+    margin-top: 20px;
+
+    /* padding: 10px; */
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 3px solid silver; */
+}
+
+.contact-section-button
+{
+    width: 100px;
+    height: 40px;
+
+    border: 3px solid rgba(0,0,0,1);
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 10px 1px rgba(0,0,0,1);
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-left: 15px;
+
+    background-color: rgba(255,255,255,1);
+
+    transition: background-color .5s ease, border-color .5s ease, color .5s ease, margin-top .5s ease, margin-left .5s ease, text-shadow .5s ease;
+}
+
+.contact-section-button:hover
+{
+    background-color: rgba(255,0,0,1);
+    border-color: rgba(255,255,255,1);
+
+    color: rgba(255,255,255,1);
+
+    margin-top: 5px;
+    margin-left: 20px;
+
+    text-shadow: 1px 1px 5px rgba(0,0,0,1);
+}
+
+
+
+/* ----- Location Section ----- */
+
+
+
+.location-section
+{
+    /* border: 3px solid red; */
+
+    max-height: 125vh;
+
+    z-index: 0;
+}
+
+.location-section-container
+{
+    /* border: 3px solid black; */
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: start;
+}
+
+.location-section-caption-container
+{
+    /* border: 3px solid red; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.location-section-caption
+{
+    /* border: 3px solid rebeccapurple; */
+
+    height: 100%;
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
+
+.map-container 
+{
+    margin-top: 30px;
+
+    border: 3px solid rgba(255,255,255,1);
+    border-radius: 20px;
+    
+    overflow: hidden;
+    
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+    
+    height: 350px;
+    max-height: 450px;
+
+    width: 100%;
+
+    z-index: -1;
+}
+
+.map-info
+{
+    margin-top: 20px;
+
+    /* border: 3px solid yellow; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.map-info p 
+{
+    /* border: 3px solid yellowgreen; */
+
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-family: monospace;
+    font-style: italic;
+
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+
+    z-index: -1;
+}
+
+/* Estilos específicos de Leaflet */
+
+.leaflet-container 
+{
+    background: #2c3e50;
+    height: 100%;
+    width: 100%;
+}

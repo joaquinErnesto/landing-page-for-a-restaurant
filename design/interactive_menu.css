@@ -1,0 +1,232 @@
+/* ----- INTERACTIVE MENU ----- */
+
+
+
+
+
+.interactive-menu
+{
+    /* border: 3px solid red; */
+
+    padding: 50px;
+
+    /* background-color: rgba(175,70,40,1); */
+
+    background: linear-gradient(
+        to bottom,
+        rgba(175,70,40,1), 
+        rgba(80,20,0,1)
+    );
+}
+
+.interactive-menu-container
+{
+    /* border: 3px solid black; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ----- Offers Section ----- */
+
+
+
+/* .offers-section
+{
+    border: 3px solid blue;
+} */
+
+/* .offers-section-container
+{
+    border: 3px solid blueviolet;
+} */
+
+
+/* ----- caption ----- */
+
+
+.offers-caption-container
+{
+    /* border: 3px solid pink; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.offers-caption
+{
+    /* border: 3px solid gold; */
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ----- offer list ----- */
+
+
+.list-container
+{
+    /* border: 3px solid salmon; */
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.offer-list-container
+{
+    border: 3px solid rgba(255,255,255,1);
+    border-radius: 20px;
+
+    padding: 20px;
+    margin: 15px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+
+    width: 300px;
+
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.3);
+}
+
+/* ----- name ----- */
+
+.offer-name-container
+{
+    /* border: 3px solid green; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-name
+{
+    /* border: 3px solid violet; */
+
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
+
+/* ----- image ----- */
+
+.offer-image-container
+{
+    /* border: 3px solid greenyellow; */
+
+    width: 100%;
+    height: 200px;
+
+    margin-top: 10px;
+}
+
+.offer-image
+{
+    border: 3px solid rgba(255,255,255,1);
+    border-radius: 20px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.3);
+}
+
+/* ----- brief ----- */
+
+.offer-brief-container
+{
+    /* border: 3px solid rebeccapurple; */
+
+    margin-top: 10px;
+}
+
+.offer-brief
+{
+    /* border: 3px solid goldenrod; */
+
+    color: rgba(255,255,255,1);
+
+    font-family: monospace;
+    font-style: italic;
+
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+/* ----- price ----- */
+
+.offer-price-container
+{
+    /* border: 3px solid blue; */
+
+    margin-top: 10px;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-price
+{
+    /* border: 3px solid grey; */
+    
+    width: 100%;
+
+    color: rgba(255,255,255,1);
+
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+
+    text-align: center;
+    text-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,1);
+
+    letter-spacing: 1.5px;
+}
