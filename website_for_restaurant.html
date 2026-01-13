@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Restaurant</title>
+    <link rel="stylesheet" href="./design/base.css">
+
+    <!-- Material Symbols -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Icons Library -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet CSS - For can use a Map -->
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript - For can use a Map -->
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<!-- This is my first website for a restaurant made applying the technique Mobile First -->
+
+<body>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-section">
+        <div class="hero-section-container">
+
+            <!-- Logo -->
+
+            <div class="logo-container">
+                <img class="logo" src="logos/logo_4.jpg" alt="">
+            </div>
+
+            <div class="restaurant-name-container">
+                <h1 class="restaurant-name">
+                    ancestral flavors
+                </h1>
+            </div>
+
+            <!-- Phrase -->
+
+            <div class="hero-section-phrase-container">
+                <p class="hero-section-phrase">
+                    Flavors that embrace the Soul
+                </p>
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="hero-section-buttons-container">
+                
+                <!-- menu button -->
+
+                <button class="hero-section-button hero-section-menu-button">
+                    see menu
+                </button>
+
+                <!-- reserve button -->
+
+                <button class="hero-section-button hero-section-reserve-button">
+                    reserve
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navigation-bar">
+        <div class="navigation-bar-container">
+            <ul class="navigation-bar-list">
+                
+                <!-- Address -->
+                
+                <li class="navigation-bar-list-item">
+                    <a class="navigation-bar-list-item-link" href="">
+                        address
+                    </a>
+                </li>
+
+                <!-- Schedules -->
+
+                <li class="navigation-bar-list-item">
+                    <a class="navigation-bar-list-item-link" href="">
+                        schedules
+                    </a>
+                </li>
+
+                <!-- Telephone Number -->
+
+                <li class="navigation-bar-list-item">
+                    <a class="navigation-bar-list-item-link" href="">
+                        tel. number
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HISTORY SECTION -->
+
+    <section class="history-section">
+        <div class="history-section-container">
+            
+            <!-- Lateral Aside -->
+
+            <aside class="lateral-aside">
+                <div class="lateral-aside-container">
+                    <h2 class="lateral-aside-caption">
+                        grandma cooking
+                    </h2>
+                </div>
+            </aside>
+
+            <!-- Main Block -->
+
+            <main class="main-block">
+                <div class="main-block-container">
+
+                    <!-- caption -->
+
+                    <div class="main-block-caption-container">
+                        <h3 class="main-block-caption">
+                            Three Generations of Flavors
+                        </h3>
+                    </div>
+
+                    <!-- paragraph -->
+
+                    <div class="main-block-paragraph-container">
+                        <p class="main-block-paragraph">
+                            Grandma was a great woman. She started this bussines in 1985 with much pasion, giving it all for the reastaurant Ancestral Flavors, his coworkers, his employees and his clients, who dictated the rules. Always they was listened because the business depended on them 
+                        </p>
+                    </div>
+
+                    <!-- Icons and Dates -->
+
+                    <div class="icons-n-dates-container">
+
+                        <!-- fire -->
+
+                        <div class="icon-n-date-element">
+                            <i class="fas fa-fire fire-icon" style="color: #FF5511; font-size: 0.6rem;">
+                                1985
+                            </i>
+                        </div>
+
+                        <!-- arrow -->
+
+                        <div class="arrow-element">
+                            <i class="fas fa-long-arrow-alt-right arrow-icon" style="color: #000000; font-size: 0.6rem;"></i>
+                        </div>
+
+                        <!-- hands -->
+
+                        <div class="icon-n-date-element">
+                            <i class="fas fa-hands-clapping hands-icon" style="color: #2233FF; font-size: 0.6rem;">
+                                2000
+                            </i>
+                        </div>
+
+                        <!-- arrow -->
+
+                        <div class="arrow-element">
+                            <i class="fas fa-long-arrow-alt-right arrow-icon" style="color: #000000; font-size: 0.6rem;"></i>
+                        </div>
+
+                        <!-- heart -->
+
+                        <div class="icon-n-date-element">
+                            <i class="fas fa-heartbeat heart-icon" style="color: #FF0000; font-size: 0.6rem;">
+                                today
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE NAVIGATION BAR -->
+
+    <nav class="interactive-navbar">
+        <div class="interactive-navbar-container">
+            <ul class="interactive-navbar-list">
+                
+                <!-- Starters -->
+
+                <li class="interactive-navbar-list-item">
+                    <a class="interactive-navbar-list-item-link" href="">
+                        starters
+                    </a>
+                </li>
+
+                <!-- Dishes -->
+
+                <li class="interactive-navbar-list-item">
+                    <a class="interactive-navbar-list-item-link" href="">
+                        dishes
+                    </a>
+                </li>
+
+                <!-- Desserts -->
+
+                <li class="interactive-navbar-list-item">
+                    <a class="interactive-navbar-list-item-link" href="">
+                        desserts
+                    </a>
+                </li>
+
+                <!-- Drinks -->
+
+                <li class="interactive-navbar-list-item">
+                    <a class="interactive-navbar-list-item-link" href="">
+                        drinks
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- INTERACTIVE MENU -->
+
+    <menu class="interactive-menu">
+        <div class="interactive-menu-container">
+            
+            <!-- Starters Section -->
+
+            <section class="starters-section offers-section">
+                <div class="starters-section-container offers-section-container">
+
+                    <!-- starters caption -->
+
+                    <div class="starters-caption-container offers-caption-container">
+                        <h2 class="starters-caption offers-caption">
+                            starters
+                        </h2>
+                    </div>
+
+                    <!-- starters offers -->
+
+                    <div class="list-container">
+                        
+                         <!-- starter 1 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 1 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    roseau
+                                </h3>
+                            </div>
+
+                            <!-- starter 1 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/roseau.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 1 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Delicados tallos de espárragos verdes a la parrilla, coronados con reducción balsámica y virutas de parmesano aged. Un comienzo elegante que despierta los sentidos con texturas crujientes y sabores terrosos
+                                </p>
+                            </div>
+
+                            <!-- starter 1 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $5.55
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 2 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 2 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    lure
+                                </h3>
+                            </div>
+
+                            <!-- starter 2 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/lure.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 2 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Tentadores camarones salteados en mantequilla de ajo y hierbas frescas, bañados en una salsa cítrica de limón amarillo. Una seducción marina que promete una experiencia culinaria inolvidable
+                                </p>
+                            </div>
+
+                            <!-- starter 2 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $10.80
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 3 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 3 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    the colorful
+                                </h3>
+                            </div>
+
+                            <!-- starter 3 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/the_colorful.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 3 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Vibrante ensalada de quinoa con pimientos rojos y amarillos asados, maíz dulce, frijoles negros y aguacate fresco. Aderezada con vinagreta de lima y cilantro - un festín visual y nutritivo
+                                </p>
+                            </div>
+
+                            <!-- starter 3 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $3.25
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 4 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 4 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    the greenish
+                                </h3>
+                            </div>
+
+                            <!-- starter 4 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/the_greenish.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 4 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Crema sedosa de espinacas y brócoli con toques de nuez moscada, coronada con croutones de pan artesanal y un hilo de aceite de oliva extra virgen. Pureza verde en cada cucharada
+                                </p>
+                            </div>
+
+                            <!-- starter 4 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $7.75
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 5 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 5 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    the yellowish
+                                </h3>
+                            </div>
+
+                            <!-- starter 5 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/the_yellowwish.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 5 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Suave mousse de mango y cúrcuma con chips de batata crujientes. Una combinación tropical que equilibra perfectamente lo dulce y lo picante, iluminando el paladar con colores dorados
+                                </p>
+                            </div>
+
+                            <!-- starter 5 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $6.99
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 6 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 6 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    the slices
+                                </h3>
+                            </div>
+
+                            <!-- starter 6 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/the_slices.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 6 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Finas láminas de carpaccio de res Angus con rúcula fresca, alcaparras y láminas de parmesano. Acompañado de nuestra mostaza artesanal con miel - elegancia en cada corte
+                                </p>
+                            </div>
+
+                            <!-- starter 6 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $12.50
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 7 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 7 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    supermix
+                                </h3>
+                            </div>
+
+                            <!-- starter 7 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/supermix.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 7 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Una exhuberante mezcla de vegetales y frutas con huevitos hervidos que conectan el paladar con el cielo. Una ensalada con una gran carga calórica que abre el apetito
+                                </p>
+                            </div>
+
+                            <!-- starter 7 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $7.25
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- starter 8 -->
+
+                        <div class="starter-list-container offer-list-container">
+
+                            <!-- starter 8 name -->
+
+                            <div class="starter-name-container offer-name-container">
+                                <h3 class="starter-name offer-name">
+                                    the square
+                                </h3>
+                            </div>
+
+                            <!-- starter 8 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/starters/the_square.jpg" alt="" class="starter-image offer-image">
+                            </div>
+
+                            <!-- starter 8 brief -->
+
+                            <div class="starter-brief-container offer-brief-container">
+                                <p class="starter-brief offer-brief">
+                                    Una sencilla ensalada de frutas y vegetales cargada de variados colores y sabores que entonan el gusto y elevan. Servida en un plato cuadrado, ideal para conectar con la mente intelectual  
+                                </p>
+                            </div>
+
+                            <!-- starter 8 price -->
+
+                            <div class="starter-price-container offer-price-container">
+                                <p class="starter-price offer-price">
+                                    $3.25
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dishes Section -->
+
+            <section class="dishes-section offers-section">
+                <div class="dishes-section-container dishes-section-container">
+
+                    <!-- dishes caption -->
+
+                    <div class="dishes-caption-container offers-caption-container">
+                        <h2 class="dishes-caption offers-caption">
+                            dishes
+                        </h2>
+                    </div>
+
+                    <!-- dishes offers -->
+
+                    <div class="list-container">
+
+                        <!-- dish 1 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 1 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the chilean
+                                </h3>
+                            </div>
+
+                            <!-- dish 1 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_chilean.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 1 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Auténtico Pastel de Choclo chileno: jugoso pino de carne, pollo desmenuzado, pasas y aceitunas, cubierto con una capa cremosa de maíz fresco gratinado. Sabores coloniales que abrazan el alma
+                                </p>
+                            </div>
+
+                            <!-- dish 1 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $21.45
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 2 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 2 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the colombian
+                                </h3>
+                            </div>
+
+                            <!-- dish 2 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_colombian.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 2 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Bandeja Paisa tradicional: frijoles campesinos, arroz blanco, carne molida, chicharrón, plátano maduro, aguacate y arepa de maíz. Una celebración completa de los sabores andinos
+                                </p>
+                            </div>
+
+                            <!-- dish 2 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $30.05
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 3 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 3 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the cuban
+                                </h3>
+                            </div>
+
+                            <!-- dish 3 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_cuban.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 3 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Ropa Vieja cubana: carne deshilachada en slow-cook con pimientos, cebolla, tomate y especias caribeñas. Acompañada de arroz congri y plátanos maduros fritos - nostalgia en cada bocado
+                                </p>
+                            </div>
+
+                            <!-- dish 3 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $25.25
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 4 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 4 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the dominican
+                                </h3>
+                            </div>
+
+                            <!-- dish 4 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_dominican.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 4 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Sancocho Dominicano: sustancioso estofado de siete carnes con yuca, ñame, plátano y maíz. El caldo aromático con cilantro y aguacate es abrazo líquido para el espíritu
+                                </p>
+                            </div>
+
+                            <!-- dish 4 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $20.89
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 5 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 5 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the mexican
+                                </h3>
+                            </div>
+
+                            <!-- dish 5 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_mexican.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 5 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Mole Poblano ancestral: pollo bañado en la legendaria salsa de chocolate, chiles y especias. Servido con arroz rojo y tortillas hechas a mano - herencia azteca en tu plato
+                                </p>
+                            </div>
+
+                            <!-- dish 5 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $27.40
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 6 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 6 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the venezuelean
+                                </h3>
+                            </div>
+
+                            <!-- dish 6 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_venezuelan.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 6 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Pabellón Criollo: carne mechada, arroz blanco, frijoles negros refritos y plátano maduro frito. Los cuatro elementos esenciales de la cocina venezolana en perfecta armonía
+                                </p>
+                            </div>
+
+                            <!-- dish 6 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $29.99
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 7 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 7 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the bolivian
+                                </h3>
+                            </div>
+
+                            <!-- dish 7 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_bolivian.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 7 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Manjar Boliviano: huevo frito a fuego lento con boniatillos, empanizada crugiente mechada con arroz blanco y una sencilla ensalada de frutas y vegetales
+                                </p>
+                            </div>
+
+                            <!-- dish 7 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $24.89
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dish 8 -->
+
+                        <div class="dish-list-container offer-list-container">
+
+                            <!-- dish 8 name -->
+
+                            <div class="dish-name-container offer-name-container">
+                                <h3 class="dish-name offer-name">
+                                    the brazilian
+                                </h3>
+                            </div>
+
+                            <!-- dish 8 image -->
+
+                            <div class="dish-image-container offer-image-container">
+                                <img src="dishes_images/dishes/the_brazilian.jpg" alt="" class="dish-image offer-image">
+                            </div>
+
+                            <!-- dish 8 brief -->
+
+                            <div class="dish-brief-container offer-brief-container">
+                                <p class="dish-brief offer-brief">
+                                    Pabellón Brasileño: sopón de frijoles con carne ahumada en su interior, frutas, vegetales, arroz blanco y macarrones empanizados. Una auténtica combinación del potelcial culinario brasileño
+                                </p>
+                            </div>
+
+                            <!-- dish 8 price -->
+
+                            <div class="dish-price-container offer-price-container">
+                                <p class="dish-price offer-price">
+                                    $28.42
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts Section -->
+
+            <section class="desserts-section offers-section">
+                <div class="desserts-section-container offers-section-container">
+
+                    <!-- desserts caption -->
+
+                    <div class="desserts-caption-container offers-caption-container">
+                        <h2 class="desserts-caption offers-caption">
+                            desserts
+                        </h2>
+                    </div>
+
+                    <!-- desserts offers -->
+
+                    <div class="list-container">
+                        
+                        <!-- dessert 1 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 1 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    brownie
+                                </h3>
+                            </div>
+
+                            <!-- dessert 1 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/brownie.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 1 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Brownie de triple chocolate con centro fundente y nueces tostadas. Servido caliente con helado de vainilla artesanal y salsa de caramelo salado - pecado capital justificado
+                                </p>
+                            </div>
+
+                            <!-- dessert 1 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $3.15
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 2 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 2 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    cake
+                                </h3>
+                            </div>
+
+                            <!-- dessert 2 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/cake.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 2 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Tres leches esponjoso impregnado con crema de coco y vainilla, coronado con merengue italiano tostado y virutas de coco fresco. Nube tropical que se derrite en el paladar
+                                </p>
+                            </div>
+
+                            <!-- dessert 2 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $2.80
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 3 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 3 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    pay
+                                </h3>
+                            </div>
+
+                            <!-- dessert 3 image -->
+
+                            <div class="starter-image-container offer-image-container">
+                                <img src="dishes_images/desserts/pai.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 3 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Pay de manzana casero con canela y nuez moscada, masa mantecosa y relleno de fruta caramelizada. Acompañado de bola de helado de vainilla - clásico reconfortante de la abuela
+                                </p>
+                            </div>
+
+                            <!-- dessert 3 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $4.55
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 4 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 4 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    pancakes
+                                </h3>
+                            </div>
+
+                            <!-- dessert 4 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/pancakes.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 4 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Stack de pancakes esponjosos con mantequilla de maple artesanal, frutos del bosque frescos y crema batida. Desayuno digno de cualquier hora del día
+                                </p>
+                            </div>
+
+                            <!-- dessert 4 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $1.65
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 5 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 5 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    snacks
+                                </h3>
+                            </div>
+
+                            <!-- dessert 5 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/snacks.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 5 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Selección de bocados dulces: trufas de chocolate oscuro, galletas de jengibre especiadas y macarons de frutos rojos. Pequeños placeres para terminar con elegancia
+                                </p>
+                            </div>
+
+                            <!-- dessert 5 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $2.05
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 6 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 6 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    whoopies
+                                </h3>
+                            </div>
+
+                            <!-- dessert 6 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/whoopies.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 6 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Sandwiches de cake de vainilla rellenos de crema de marshmallow casera. Suaves, esponjosos y ligeramente tostados - nostalgia en cada mordisco
+                                </p>
+                            </div>
+
+                            <!-- dessert 6 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $3.75
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 7 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 7 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    mixed ice - cream
+                                </h3>
+                            </div>
+
+                            <!-- dessert 7 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/mixed_icecream.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 7 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Un helado especial resultado de una mezcla de chocolate con vainilla roseado con deliciosas capas de dulces, caramelos, confituras que le adornan y dan un sabor espectacular
+                                </p>
+                            </div>
+
+                            <!-- dessert 7 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $4.36
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- dessert 8 -->
+
+                        <div class="dessert-list-container offer-list-container">
+
+                            <!-- dessert 8 name -->
+
+                            <div class="dessert-name-container offer-name-container">
+                                <h3 class="dessert-name offer-name">
+                                    little balls
+                                </h3>
+                            </div>
+
+                            <!-- dessert 8 image -->
+
+                            <div class="dessert-image-container offer-image-container">
+                                <img src="dishes_images/desserts/little_balls.jpg" alt="" class="dessert-image offer-image">
+                            </div>
+
+                            <!-- dessert 8 brief -->
+
+                            <div class="dessert-brief-container offer-brief-container">
+                                <p class="dessert-brief offer-brief">
+                                    Pequeñas bolitas envueltas en una deliciosa capa de chocolate. La mejor opción para cerrar su cena cuando no desee llenarse demasiado. Su exquisitez le dejará deseo de comer unas más
+                                </p>
+                            </div>
+
+                            <!-- dessert 8 price -->
+
+                            <div class="dessert-price-container offer-price-container">
+                                <p class="dessert-price offer-price">
+                                    $2.75
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drinks Section -->
+
+            <section class="drinks-section offers-section">
+                <div class="drinks-section-container offers-section-container">
+
+                    <!-- drinks caption -->
+
+                    <div class="drinks-caption-container offers-caption-container">
+                        <h2 class="drinks-caption offers-caption">
+                            drinks
+                        </h2>
+                    </div>
+
+                    <!-- drinks offers -->
+
+                    <div class="list-container">
+                        
+                        <!-- drink 1 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 1 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    european cocktail
+                                </h3>
+                            </div>
+
+                            <!-- drink 1 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/european_cocktail.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 1 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Sophisticated blend of elderflower liqueur, prosecco and fresh mint. A sparkling European elegance that dances on the palate with floral notes and citrus undertones
+                                </p>
+                            </div>
+
+                            <!-- drink 1 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.95
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 2 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 2 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    lemonade
+                                </h3>
+                            </div>
+
+                            <!-- drink 2 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/lemonade.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 2 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Limonada artesanal con hierbabuena fresca y un toque de jengibre. Refrescante, revitalizante y perfectamente equilibrada entre lo dulce y lo ácido
+                                </p>
+                            </div>
+
+                            <!-- drink 2 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.55
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 3 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 3 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    pink fruit juice
+                                </h3>
+                            </div>
+
+                            <!-- drink 3 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/pink_fruit_juice.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 3 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Zumo vibrante de sandía, fresa y granada con hierbas frescas. Antioxidantes en estado puro con un color que alegra la vista y un sabor que rejuvenece
+                                </p>
+                            </div>
+
+                            <!-- drink 3 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.76
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 4 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 4 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    smoothies
+                                </h3>
+                            </div>
+
+                            <!-- drink 4 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/smoothies.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 4 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Batido cremoso de plátano, mango y leche de coco con espirulina. Energía natural en vaso con textura sedosa y dulzura tropical
+                                </p>
+                            </div>
+
+                            <!-- drink 4 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.54
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 5 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 5 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    coconut water
+                                </h3>
+                            </div>
+
+                            <!-- drink 5 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/coconut_water.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 5 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Agua de coco refrescante con un trozitos de masa de coco en su interior para intensificar su sabor y dar un toque diferente y saludable a esta bebida
+                                </p>
+                            </div>
+
+                            <!-- drink 5 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.35
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 6 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 6 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    green juices
+                                </h3>
+                            </div>
+
+                            <!-- drink 6 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/green_juices.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 6 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Los jugos verges más y menos espesos son los mejores para preparar el aparato digestivo para un delicioso almuerzo o cena latina
+                                </p>
+                            </div>
+
+                            <!-- drink 6 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.54
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 7 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 7 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    mate
+                                </h3>
+                            </div>
+
+                            <!-- drink 7 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/mate.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 7 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Una fuerte y deliciosa bebida para despertar y estar cargado de energía ante los subidones de azúcar en sangre. Delicioso, jugoso y espeso mate 
+                                </p>
+                            </div>
+
+                            <!-- drink 7 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.71
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- drink 8 -->
+
+                        <div class="drink-list-container offer-list-container">
+
+                            <!-- drink 8 name -->
+
+                            <div class="drink-name-container offer-name-container">
+                                <h3 class="drink-name offer-name">
+                                    pumpkin juice
+                                </h3>
+                            </div>
+
+                            <!-- drink 8 image -->
+
+                            <div class="drink-image-container offer-image-container">
+                                <img src="dishes_images/drinks/pumpkin_juice.jpg" alt="" class="drink-image offer-image">
+                            </div>
+
+                            <!-- drink 8 brief -->
+
+                            <div class="drink-brief-container offer-brief-container">
+                                <p class="drink-brief offer-brief">
+                                    Aparentemente no gustoso, pero así de naranja su color así su delicioso sabor y potencial nutritico. Jugo de calabaza, no te lo pierdas
+                                </p>
+                            </div>
+
+                            <!-- drink 8 price -->
+
+                            <div class="drink-price-container offer-price-container">
+                                <p class="drink-price offer-price">
+                                    $0.27
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </menu>
+
+    <!-- CULLINARY GALLERY -->
+
+    <section class="culinary-gallery">
+        <div class="culinary-gallery-container">
+
+            <!-- Caption -->
+
+            <div class="culinary-gallery-caption-container">
+                <h2 class="culinary-gallery-caption">
+                    Art that is Savored
+                </h2>
+            </div>
+
+            <!-- Images -->
+
+            <div class="culinary-gallery-images-grid-container">
+
+                <!-- image 1 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_1.jpg" class="culinary-gallery-image culinary-gallery-image-1" alt="">
+                </div>
+
+                <!-- image 2 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_2.jpg" class="culinary-gallery-image culinary-gallery-image-2" alt="">
+                </div>
+
+                <!-- image 3 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_3.jpg" class="culinary-gallery-image culinary-gallery-image-3" alt="">
+                </div>
+
+                <!-- image 4 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_4.jpg" class="culinary-gallery-image culinary-gallery-image-4" alt="">
+                </div>
+
+                <!-- image 5 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_5.jpg" class="culinary-gallery-image culinary-gallery-image-5" alt="">
+                </div>
+
+                <!-- image 6 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_6.jpg" class="culinary-gallery-image culinary-gallery-image-6" alt="">
+                </div>
+
+                <!-- image 7 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_7.jpg" class="culinary-gallery-image culinary-gallery-image-7" alt="">
+                </div>
+
+                <!-- image 8 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_8.jpg" class="culinary-gallery-image culinary-gallery-image-8" alt="">
+                </div>
+
+                <!-- image 9 -->
+
+                <div class="culinary-gallery-image-container">
+                    <img src="culinary_gallery/culinary_gallery_9.jpg" class="culinary-gallery-image culinary-gallery-image-9" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTAURANT EXPERIENCE -->
+
+    <section class="restaurant-experience">
+
+            <!-- Caption -->
+
+            <div class="restaurant-experience-caption-container">
+                <h2 class="restaurant-experience-caption">
+                    restaurant experience
+                </h2>
+            </div>
+
+            <div class="restaurant-experience-container">
+
+                <!-- Environment Section -->
+
+                <section class="environment-section">
+                    <div class="environment-section-container">
+                        
+                        <!-- caption -->
+
+                        <div class="environment-section-caption-container">
+                            <h3 class="environment-section-caption">
+                                the environment
+                            </h3>
+                        </div>
+
+                        <!-- images -->
+
+                        <div class="environment-section-images-grid-container">
+
+                            <!-- image 1 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_1.jpg" class="environment-section-image environment-section-image-1" alt="">
+                            </div>
+
+                            <!-- image 2 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_2.jpg" class="environment-section-image environment-section-image-2" alt="">
+                            </div>
+
+                            <!-- image 3 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_3.jpg" class="environment-section-image environment-section-image-3" alt="">
+                            </div>
+
+                            <!-- image 4 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_4.jpg" class="environment-section-image environment-section-image-4" alt="">
+                            </div>
+
+                            <!-- image 5 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_5.jpg" class="environment-section-image environment-section-image-5" alt="">
+                            </div>
+
+                            <!-- image 6 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_6.jpg" class="environment-section-image environment-section-image-6" alt="">
+                            </div>
+
+                            <!-- image 7 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_7.jpg" class="environment-section-image environment-section-image-7" alt="">
+                            </div>
+
+                            <!-- image 8 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_8.jpg" class="environment-section-image environment-section-image-8" alt="">
+                            </div>
+
+                            <!-- image 9 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_9.jpg" class="environment-section-image environment-section-image-9" alt="">
+                            </div>
+
+                            <!-- image 10 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_10.jpg" class="environment-section-image environment-section-image-10" alt="">
+                            </div>
+
+                            <!-- image 11 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_11.jpg" class="environment-section-image environment-section-image-11" alt="">
+                            </div>
+
+                            <!-- image 12 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_12.jpg" class="environment-section-image environment-section-image-12" alt="">
+                            </div>
+
+                            <!-- image 13 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_13.jpg" class="environment-section-image environment-section-image-13" alt="">
+                            </div>
+
+                            <!-- image 14 -->
+
+                            <div class="environment-section-image-container">
+                                <img src="restaurant_experience/restaurant_experience_14.jpg" class="environment-section-image environment-section-image-14" alt="">
+                            </div>
+                        </div>
+
+                        <!-- description -->
+
+                        <div class="environment-section-description-container">
+
+                            <!-- subtitle 1 -->
+
+                            <h3 class="environment-section-description-subtitle environment-section-description-subtitle-1">
+                                "Una Inmersión Sensorial en la Tradición"
+                            </h3>
+
+                            <!-- paragraph 1 -->
+
+                            <p class="environment-section-description-paragraph environment-section-description-paragraph-1">
+                                En Ancestral Flavors, no solo servimos platos - creamos experiencias que transportan nuestros comensales a través del tiempo y la memoria. Cada visita es un viaje sensorial donde los aromas de la cocina de la abuela se fusionan con la calidez de un hogar que nunca visitaste pero que reconoces en el alma.
+                            </p>
+
+                            <!-- subtitle 2 -->
+
+                            <h3 class="environment-section-description-subtitle environment-section-description-subtitle-2">
+                                El Ambiente:
+                            </h3>
+
+                            <!-- paragraph 2 -->
+
+                            <p class="environment-section-description-paragraph environment-section-description-paragraph-2">
+                                Al cruzar nuestras puertas, el tiempo parece ralentizarse. La suave iluminación dorada acaricia paredes adornadas con fotografías familiares en sepia, mientras el murmullo de conversaciones se mezcla con el chisporroteo de especias en el comal. Muebles de madera maciza, tejidos artesanales y el eco de risas antiguas crean un tapiz de nostalgia y comfort.
+                            </p>
+
+                            <!-- subtitle 3 -->
+
+                            <h3 class="environment-section-description-subtitle environment-section-description-subtitle-3">
+                                La Ceremonia del Sabor:
+                            </h3>
+
+                            <!-- paragraph 3 -->
+
+                            <p class="environment-section-description-paragraph environment-section-description-paragraph-3">
+                                Nuestros chefs no cocinan - ejecutan una danza coreografiada por tres generaciones. Cada plato cuenta una historia: el mole que preparaba la abuela para las bodas, el sancocho que sanaba los resfriados infantiles, los postres que endulzaban las tardes de domingo. Los ingredientes son seleccionados personalmente en mercados locales al amanecer, manteniendo viva la tradición del trueque y la confianza.
+                            </p>
+
+                            <!-- subtitle 4 -->
+
+                            <h3 class="environment-section-description-subtitle environment-section-description-subtitle-4">
+                                Los Detalles que Marcan la Diferencia:
+                            </h3>
+
+                            <!-- list -->
+
+                            <ul class="environment-section-description-list">
+
+                                <!-- list item 1 -->
+
+                                <li class="environment-section-description-list-item environment-section-description-list-item-1">
+                                    <span>Servicio con Alma:</span> Nuestro personal conoce las historias detrás de cada receta
+                                </li>
+
+                                <!-- list item 2 -->
+
+                                <li class="environment-section-description-list-item environment-section-description-list-item-2">
+                                    <span>Música en Vivo:</span> Guitarristas que interpretan melodías tradicionales cada viernes
+                                </li>
+                                
+                                <!-- list item 3 -->
+                                
+                                <li class="environment-section-description-list-item environment-section-description-list-item-3">
+                                    <span>Rincón de la Memoria:</span> Área dedicada a fotografías y relatos de nuestros comensales
+                                </li>
+
+                                <!-- list item 4 -->
+
+                                <li class="environment-section-description-list-item environment-section-description-list-item-4">
+                                    <span>Cocina Abierta:</span> Donde puedes ver la magia ocurrir y conversar con nuestros chefs
+                                </li>
+                            </ul>
+
+                            <!-- subtitle 5 -->
+
+                            <h3 class="environment-section-description-subtitle environment-section-description-subtitle-5">
+                                Testimonio Esencial:
+                            </h3>
+
+                            <!-- phrase -->
+
+                            <p class="environment-section-description-phrase">
+                                "Comer aquí no es llenar el estómago, es alimentar el espíritu. Es ese abrazo culinario que te hace recordar sabores que nunca probaste pero que extrañas profundamente."
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Calendar Section -->
+
+                <section class="calendar-section">
+                    <div class="calendar-section-container">
+
+                        <!-- caption -->
+
+                        <div class="calendar-section-caption-container">
+                            <h3 class="calendar-section-caption">
+                                special events calendar
+                            </h3>
+                        </div>
+
+                        <!-- scroll -->
+
+                        <div class="calendar-section-scroll-container">
+                            
+                            <!-- janaury -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>ENERO</span>
+                                
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-january-list">
+                                    <li>
+                                        15: Noche de Recuerdos - Menú basado en recetas de diarios familiares antiguos
+                                    </li>
+                                    <li>
+                                        28: Festival del Mole - 7 tipos de mole tradicional mexicano   
+                                    </li>    
+                                </ul>    
+                            </div>
+                            
+                            <!-- february -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>FEBRERO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-february-list">
+                                    <li>
+                                        14: Cena Romántica Ancestral - Menú afrodisíaco con historias de amor familiar
+                                    </li>
+                                    <li>
+                                        29: Noche de Carnaval - Sabores tradicionales de carnavales latinoamericanos        
+                                    </li>    
+                                </ul>    
+                            </div>
+                            
+                            <!-- march -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>MARZO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-march-list">
+                                    <li>
+                                        8: Mujeres y Sabores - Homenaje a las matriarcas de nuestra cocina
+                                    </li>
+                                    <li>
+                                        21: Equinoccio de Sabores - Menú con ingredientes de temporada de primavera        
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- april -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>ABRIL</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-april-list">
+                                    <li>
+                                        12: Semana Santa Tradicional - Platos típicos de cuaresma de 6 países
+                                    </li>
+                                    <li>
+                                        27: Día del Niño Interior - Menú que evoca sabores de la infancia
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- may -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>MAYO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-may-list">
+                                    <li>
+                                        10: Homenaje a las Madres - Recetas que las abuelas enseñaron a las madres
+                                    </li>
+                                    <li>
+                                        25: Festival del Maíz - 15 preparaciones basadas en maíz        
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- june -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>JUNIO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-june-list">
+                                    <li>
+                                        15: Noche de Fogata - Platos que tradicionalmente se cocinan al aire libre
+                                    </li>
+                                    <li>
+                                        29: Fiesta del Solsticio - Ingredientes del solsticio de verano 
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- july -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>JULIO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-july-list">
+                                    <li>
+                                        4: Independencia de Sabores - Platos que definen identidades nacionales
+                                    </li>
+                                    <li>
+                                        20: Día del Amigo Culinario - Trae un amigo y reciben plato especial
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- august -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>AGOSTO</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-august-list">
+                                    <li>
+                                        3: Festival de la Lluvia - Comfort food para días lluviosos
+                                    </li>
+                                    <li>
+                                        17: Noche de Leyendas - Cada plato viene con una leyenda familiar
+                                    </li>    
+                                </ul>
+                            </div>
+                            
+                            <!-- september -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>SEPTIEMBRE</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-september-list">
+                                    <li>
+                                        16: Gritos de Independencia - Sabores de las independencias latinoamericanas
+                                    </li>
+                                    <li>
+                                        28: Festival de la Cosecha - Ingredientes de cosecha otoñal
+                                    </li>    
+                                </ul>
+                            </div>
+                            
+                            <!-- october -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>OCTUBRE</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-october-list">
+                                    <li>
+                                        12: Encuentro de Mundos - Fusión de sabores precolombinos y europeos
+                                    </li>
+                                    <li>
+                                        31: Noche de Ancestros - Platos que honran a quienes ya no están        
+                                    </li>    
+                                </ul>
+                            </div>
+                            
+                            <!-- november -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>NOVIEMBRE</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-november-list">
+                                    <li>
+                                        2: Día de Muertos Vivientes - Ofrenda culinaria a los antepasados
+                                    </li>
+                                    <li>
+                                        23: Gracias por la Abundancia - Menú de agradecimiento familiar   
+                                    </li>    
+                                </ul>
+                            </div>
+                            
+                            <!-- dicember -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>DICIEMBRE</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-dicember-list">
+                                    <li>
+                                        12: Noche de Luces - Platos que iluminan el paladar
+                                    </li>
+                                    <li>
+                                        24: Cena de Nochebuena Ancestral - Recetas transmitidas por generaciones
+                                    </li>
+                                    <li>
+                                        31: Despedida con Sabor - Menú que cierra ciclos y abre sabores nuevos
+                                    </li>    
+                                </ul>
+                            </div>
+
+                            <!-- regular monthly events -->
+
+                            <div class="calendar-section-scroll-month-container">
+                                <span>Eventos Mensuales Regulares:</span>
+
+                                <ul class="calendar-section-scroll-list calendar-section-scroll-regular-events-list">
+                                    <li>
+                                        Cada primer martes: Noche de Historias Familiares
+                                    </li>
+                                    <li>
+                                        Cada tercer sábado: Clase de Cocina con la Abuela (metafórica)
+                                    </li>
+                                    <li>
+                                        Último domingo: Mercado de Productores Ancestrales
+                                    </li>
+                                </ul>
+                            </div>	
+                            
+                            <!-- paragraph -->
+
+                            <p class="calendar-section-scroll-paragraph">
+                                Cada evento incluye música temática, decoración especial y la oportunidad de conectar con las raíces más profundas de nuestra herencia culinaria.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </section>
+
+    <!-- CONTACT AND LOCATION -->
+
+    <section class="contact-n-location-section">
+
+        <!-- Caption -->
+
+        <div class="contact-n-location-caption-container">
+            <h2 class="contact-n-location-caption">
+                Contact and Location
+            </h2>
+        </div>
+
+        <div class="contact-n-location-section-container">
+
+            <!-- Contact -->
+
+            <section class="contact-section">
+                <div class="contact-section-container">
+                    
+                    <!-- caption -->
+
+                    <div class="contact-section-caption-container">
+                        <h3 class="contact-section-caption">
+                            found us
+                        </h3>
+                    </div>
+
+                    <!-- address -->
+
+                    <div class="contact-address-container contact-subtitle-container">
+                        
+                        <!-- caption -->
+
+                        <h4 class="contact-address-caption contact-subcaption">
+                            address:
+                        </h4>
+
+                        <!-- paragraph 1 -->
+
+                        <p class="contact-address-paragraph-1 contact-paragraph">
+                            You can found us, surely, at this address all the week. We hope serve you with much love.         
+                        </p>
+
+                        <!-- paragraph 2 -->
+
+                        <p class="contact-address-paragraph-2 contact-paragraph"> 
+                            country/state/city/street/number/between         
+                        </p>
+                    </div>
+
+                    <!-- Schedules -->
+
+                    <div class="contact-schedules-container contact-subtitle-container">
+                        
+                        <!-- caption -->
+
+                        <h4 class="contact-schedules-caption contact-subcaption">
+                            schedules:
+                        </h4>
+
+                        <!-- paragraph -->
+
+                        <p class="contact-schedules-paragraph contact-paragraph">
+                            Sunday - Thursday: 11:00 AM - 11:00 PM
+                            Friday and Saturday: 12:00 PM - 12:00 AM         
+                        </p>
+                    </div>
+
+                    <!-- telephone number -->
+
+                    <div class="contact-telephone-number-container contact-subtitle-container">
+                        
+                        <!-- caption -->
+
+                        <h4 class="contact-telephone-number-caption contact-subcaption">
+                            telephone number:
+                        </h4>
+
+                        <!-- paragraph -->
+
+                        <p class="contact-telephone-number-paragraph contact-paragraph">
+                            Our telephone number is +1 432 3421 6754. You can call us when you wish. We will give attention to your call.         
+                        </p>
+
+                        <!-- button -->
+
+                        <div class="contact-section-button-container">
+
+                            <!-- reserve button -->
+
+                            <button class="contact-section-button">
+                                reserve
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location -->
+
+            <section class="location-section">
+                <div class="location-section-container">
+                    
+                    <!-- caption -->
+
+                    <div class="location-section-caption-container">
+                        <h3 class="location-section-caption">
+                            in here
+                        </h3>
+                    </div>
+
+                    <!-- map container -->
+                    
+                    <div id="restaurant-map" class="map-container">
+                        <!-- the map is charged in here -->
+                    </div>
+                    
+                    <!-- aditional information -->
+                    
+                    <div class="map-info">
+                        <p>Make click on the map for make interaction and see our exact location</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+
+    <section class="reviews-section">
+        <div class="reviews-section-container">
+                    
+            <!-- Caption -->
+
+            <div class="reviews-caption-container">
+                <h2 class="reviews-caption">
+                    reviews
+                </h2>
+            </div>
+            
+            <!-- subcaption -->
+
+            <div class="reviews-subcaption-container">
+                <h3 class="reviews-subcaption">
+                    What do our clients say?
+                </h3>
+            </div>
+
+            <!-- Carousel -->
+
+            <div class="reviews-carousel-container">
+                <div class="reviews-cards-wrapper" id="cardsWrapper">
+                            
+                    <!-- Las tarjetas se generarán con JavaScript -->
+                        
+                </div>
+            </div>
+                    
+            <!-- Indicators -->
+
+            <div class="reviews-indicators-container" id="indicators">              
+                
+                <!-- the indicators are generated with JavaScript -->
+
+            </div>
+                    
+            <!-- Buttons -->
+
+            <div class="reviews-buttons-container">
+
+                <!-- previous button -->
+
+                <button class="reviews-buttons reviews-previous-button" id="prevBtn">
+                    previous
+                </button>
+                        
+                <!-- next button -->
+
+                <button class="reviews-buttons reviews-next-button" id="nextBtn">
+                    next
+                </button>        
+            </div>
+                 
+            <!-- Instruction -->
+            
+            <div class="reviews-instruction-container">
+                <p class="reviews-instruction">
+                    Make a shift horizontally or use the buttons for browse
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Footer Cards -->
+
+            <div class="footer-cards-grid">
+                
+                <!-- card - links -->
+
+                <div class="footer-card-container links-card-container">
+
+                    <!-- title -->
+
+                    <h4 class="elements-list-title links-list-title">
+                        links <i class="fas fa-link"></i>
+                    </h4>
+
+                    <!-- elements list -->
+
+                    <ul class="elements-list links-list">
+                        
+                        <!-- list element - menu -->
+                        
+                        <li class="list-element links-list-element">
+                            <a href="">
+                                menu <i class="fas fa-book-open"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - reserves -->
+                        
+                        <li class="list-element links-list-element">
+                            <a href="">
+                                reserves <i class="far fa-calendar-check"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - history -->
+                        
+                        <li class="list-element links-list-element">
+                            <a href="">
+                                history <i class="fas fa-scroll"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- card - schedules -->
+
+                <div class="footer-card-container schedules-card-container">
+
+                    <!-- title -->
+
+                    <h4 class="elements-list-title schedules-list-title">
+                        schedules <i class="far fa-clock"></i>
+                    </h4>
+
+                    <!-- elements list -->
+
+                    <ul class="elements-list schedules-list">
+                        
+                        <!-- list element - schedule 1 -->
+                        
+                        <li class="list-element schedules-list-element">
+                            <p>
+                                Sunday to Thursday: <span>11:00 AM - 11:00 PM</span>
+                            </p>
+                        </li>
+
+                        <!-- list element - schedule 2 -->
+                        
+                        <li class="list-element schedules-list-element">
+                            <p>
+                                Friday and Saturday: <span>12:00 PM - 12:00 AM</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- card - contact -->
+
+                <div class="footer-card-container contact-card-container">
+
+                    <!-- title -->
+
+                    <h4 class="elements-list-title contact-list-title">
+                        contact <i class="fas fa-phone-alt"></i>
+                    </h4>
+
+                    <!-- elements list -->
+
+                    <ul class="elements-list contact-list">
+                        
+                        <!-- list element - telephone number -->
+                        
+                        <li class="list-element contact-list-element">
+                            <a href="">
+                                telephone number <i class="fas fa-mobile-alt"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - email -->
+                        
+                        <li class="list-element contact-list-element">
+                            <a href="">
+                                email <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - address -->
+                        
+                        <li class="list-element contact-list-element">
+                            <a href="">
+                                address <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </li>   
+                    </ul>
+                </div>
+
+                <!-- card - social media -->
+
+                <div class="footer-card-container social-media-card-container">
+
+                    <!-- title -->
+
+                    <h4 class="elements-list-title social-media-list-title">
+                        social media <i class="fas fa-hashtag"></i>
+                    </h4>
+
+                    <!-- elements list -->
+
+                    <ul class="elements-list social-media-list">
+                        
+                        <!-- list element - facebook -->
+                        
+                        <li class="list-element social-media-list-element">
+                            <a href="">
+                                facebook <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - instagram -->
+                        
+                        <li class="list-element social-media-list-element">
+                            <a href="">
+                                instagram <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <!-- list element - twitter -->
+                        
+                        <li class="list-element social-media-list-element">
+                            <a href="">
+                                twitter <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- Map in the Contact and Location Section -->
+
+    <script src="functionalities/map.js"></script>
+    
+    <!-- Cards in the Carousel in the Reviews Section -->
+
+    <script src="functionalities/cards.js"></script>
+</body>
+</html>
